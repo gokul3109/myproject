@@ -1,8 +1,7 @@
-import { NextApiRequest, NextApiResponse } from "next";
 import connectDB from "./db";
 import User from "./models/User";
 
-const handler = async (req: NextApiRequest, res: NextApiResponse) => {
+const handler = async (req, res) => {
     await connectDB();
 
     if(req.method === 'POST'){

@@ -1,4 +1,9 @@
 const express = require('express');
+const mongoose = require('mongoose');
+const bodyParser = require('body-parser');
+
+const cors = require('cors');
+const userRoutes = require('./src/pages/api/routes/')
 const next = require('next');
 
 const dev = process.env.NODE_ENV !== 'production';
